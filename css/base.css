@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+div {
+    align-items: center;
+}
+
+
+
+@media  (max-width: 767px) {
+    body {
+        width: 480px;
+    }
+}    
