@@ -22,14 +22,13 @@
     .e , .f , .g , .h{
          width: 240px;
          height: 250px;
-         float: left;
+         
          text-align: center;  
          border: darkgray solid 1px;       
     }
     .e , .f , .g , .h p {
         line-height: 250px;
     }
-    
 
     .i {
         width: 480px;
@@ -41,7 +40,18 @@
     .i p {
         line-height: 80px;
     }
-    
+    .container-efgh{ 
+      width: 480px; 
+      margin: auto;
+    }
+
+    .container-ef, .container-gh{    
+    display: grid; 
+     grid-template-columns: 1fr 1fr;  
+    }
+    .e, .f, .g, .h{       
+     height: 250px;   
+    }
 }
 
 /* # Desktop */
@@ -78,9 +88,11 @@
         text-align: center;
         
     }
+
+    .container1 {
+        display: flex;
+    }
     .c  {
-        
-        float: left;
         border: darkgray solid 1px;
     }
     .c p {
@@ -88,7 +100,6 @@
     }
 
     .d {
-        float: right;
         border: darkgray solid 1px;  
     }
     
@@ -102,21 +113,17 @@
         text-align: center;
         
     }
-    .e {
-        float: left;
-    }
+    
     .e p {
         line-height: 250px;
     }
     .f {
-        float: left;
         border: darkgray solid 1px;
     }
     .f p {
         line-height: 250px;
     }
     .g {
-        float: left;
         border: darkgray solid 1px;
     }
 
@@ -124,8 +131,6 @@
         line-height: 250px;
     }
     .h {
-        float: right;
-       
         border: darkgray solid 1px;
     }
 
@@ -144,4 +149,19 @@
         line-height: 150px;
         color: darkgray;
     }
+
+    
+    .container-efgh{
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+    .container-ef{        
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+   }
+    .container-gh{
+     display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+    
 }
